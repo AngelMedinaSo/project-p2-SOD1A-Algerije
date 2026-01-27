@@ -695,6 +695,7 @@ z-index: 1;
   border-radius: 12px;
   padding: clamp(15px, 1vw, 100rem);
   background: #0D3320;
+  box-shadow: 7px 7px 15px 0px #092316;
 }
 
 .block-rightSide-top-img-maatschappelijk{
@@ -705,6 +706,7 @@ z-index: 1;
 
 .block-rightSide-top-img-maatschappelijk img{
   height: clamp(1.5rem, 2.3vw, 100rem);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(122deg) brightness(115%) contrast(101%);
 }
 
 .block-rightSide-maatschappelijk:nth-child(1)
@@ -751,6 +753,7 @@ z-index: 1;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px 0px 0px 15px;
+  box-shadow: 7px 7px 15px 0px #092316;
   padding: clamp(.7rem, 1.5%, 100rem);
 }
 
@@ -835,6 +838,7 @@ z-index: 1;
   background: var(--backGroundColor2);
   padding: clamp(.7rem, 1.5%, 100rem);
   border-radius: 0px 15px 15px 0px;
+  box-shadow: 7px 7px 15px 0px #092316;
 }
 
 .box-rightSide-top-badge-section-maatschappij{
