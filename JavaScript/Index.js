@@ -33,14 +33,14 @@ function load_html_file(file_name, element_id) {
 document.addEventListener("DOMContentLoaded", function () {
   // laad de header als er een element met id="header-plaats" bestaat
   if (document.getElementById("header-plaats")) {
-    load_html_file("header.html", "header-plaats");
+    load_html_file("HTML/header.html", "header-plaats");
   }
   // laad het menu als er een element met id="menu-plaats" bestaat
   if (document.getElementById("menu-plaats")) {
-    load_html_file("menu.html", "menu-plaats");
+    load_html_file("HTML/menu.html", "menu-plaats");
   }
   // laad de footer als er een element met id="footer-plaats" bestaat
   if (document.getElementById("footer-plaats")) {
-    load_html_file("footer.html", "footer-plaats");
+    load_html_file("HTML/footer.html", "footer-plaats");
   }
 });
