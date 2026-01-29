@@ -620,6 +620,7 @@ z-index: 1;
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.293);
+  color: #fff;
   padding: clamp(.5rem, .6vw, 12rem) clamp(1rem, .6vw, 12rem);
   gap: clamp(.5rem, .5vw, 12rem);
   border-radius: 999px;
@@ -755,6 +756,8 @@ z-index: 1;
   border-radius: 15px 0px 0px 15px;
   box-shadow: 7px 7px 15px 0px #092316;
   padding: clamp(.7rem, 1.5%, 100rem);
+  width: 25vw;
+  flex-shrink: 0;
 }
 
 .box-section-maatschappij:nth-child(1) .box-leftSide-section-maatschappij{
@@ -1544,6 +1547,7 @@ filter: brightness(0) saturate(100%) invert(49%) sepia(92%) saturate(905%) hue-r
   }
   .box-leftSide-section-maatschappij{
   border-left: rgb(196, 0, 0) 5px solid;
+  width: 100%;
   }
   .box-section-maatschappij{
     padding: 0rem 0rem;
@@ -1559,7 +1563,6 @@ filter: brightness(0) saturate(100%) invert(49%) sepia(92%) saturate(905%) hue-r
   .box-section-maatschappij{
   padding: 3vw;
   }
-
   .card-samenstelling{
     transition: none;
   }
