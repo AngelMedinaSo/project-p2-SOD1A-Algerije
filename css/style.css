@@ -12,17 +12,15 @@
 
 /* achtergrond */
 ::-webkit-scrollbar-track {
-  background: #eee;
+  background: #29634C;
 }
 
 /* het schuifje */
 ::-webkit-scrollbar-thumb {
-  background: #174735;
-  border-radius: 10px;
-  transition: 200ms all;
+  background: #194937;
+  border-radius: 999px;
 }
 
-/* hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #13392b;
 }
@@ -142,11 +140,15 @@ nav ul li a:hover::after {
   width: 100%;
 } 
 */
+#menu-plaats {
+  min-height: 60px;
+}
 
 .nav-menu{
   display: flex;
   justify-content: center;
   align-self: center;  
+  position: relative;
 }
 
 .nav-main-menu{
@@ -157,8 +159,16 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   gap: clamp(1.3rem, 5vw, 4rem);
-  overflow: hidden;
+}
+
+.nav-extend-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 1.5vw, 100rem);
 }
 
 .nav-menu ul{
@@ -199,6 +209,14 @@ nav ul li a:hover::after {
   color: #bcffe5;
 }
 
+.second-nav-extend-menu {
+  display: none;
+}
+
+.second-nav-extend-menu.open {
+  display: flex;
+}
+
 .lines-div-menu{
   height: 32px;
   width: 30px;
@@ -208,6 +226,8 @@ nav ul li a:hover::after {
   flex-direction: column;
   justify-content: space-around;
   position: relative;
+  cursor: pointer;
+  transition: transform 0.5s;
 }
 
 .lines-div-menu::before{
@@ -220,26 +240,45 @@ nav ul li a:hover::after {
   width: 3px;
   border-radius: 50px;
   background-color: rgb(116, 115, 115);
-
 }
 
 .lines-div-menu span{
   height: 3px;
   border-radius: 30px;
   background-color: #ffffffc9;
+  cursor: pointer;
 }
 
-.lines-div-menu span:nth-child(1){
+.line1-menu{
   width: 70%;
+  transition: all 200ms;
 }
 
-.lines-div-menu span:nth-child(2){
+.line2-menu{
   width: 100%;
+  transition: all 350ms;
 }
 
-.lines-div-menu span:nth-child(3){
+.line3-menu{
   width: 85%;
+  transition: all 500ms;
 }
+
+.lines-div-menu:hover span:nth-child(1){
+  background-color: #a9ffde;
+  transform: translateX(2px);
+}
+
+.lines-div-menu:hover span:nth-child(2){
+  background-color: #a9ffde;
+  transform: translateX(2px);
+}
+
+.lines-div-menu:hover span:nth-child(3){
+  background-color: #a9ffde;
+  transform: translateX(2px);
+}
+
 
 /*=== HOME PAGE ===*/
 .main-index{
@@ -997,12 +1036,12 @@ z-index: 1;
 }
 
 .title-main-samenstelling h1{
-  font-size: clamp(1.5rem, 2.7vw, 100rem);
+  font-size: clamp(1.4rem, 2.7vw, 100rem);
   margin-bottom: clamp(.7rem, 1%, 100%);
 }
 
 .title-main-samenstelling p{
-  font-size: clamp(1rem, 1.5vw, 100rem);
+  font-size: clamp(.9rem, 1.5vw, 100rem);
   width: clamp(20rem, 50%, 100rem);
 }
 
@@ -1568,5 +1607,13 @@ filter: brightness(0) saturate(100%) invert(49%) sepia(92%) saturate(905%) hue-r
   }
   .card-samenstelling:hover{
     transform: none;
+  }
+  .title-main-samenstelling{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1% 0%;
   }
 }
