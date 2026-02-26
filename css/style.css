@@ -1485,28 +1485,198 @@ filter: brightness(0) saturate(100%) invert(49%) sepia(92%) saturate(905%) hue-r
   margin-bottom: 1%;
 }
 
+/* === Contact Formulier === */
+/* Body */
+.body-contact{
+  background: linear-gradient(180deg,rgba(23, 71, 53, 1) 15%, rgba(33, 99, 75, 1) 100%);
+}
 
+/* --- Main --- */
+.body-contact .main{
+  padding: 3% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 
+/* Main Title & Text */
+.body-contact .main h1{
+  font-size: clamp(1.4rem, 2.7vw, 100rem);
+  margin-bottom: clamp(.7rem, 1%, 100%);
+}
 
+.body-contact .main p{
+  font-size: clamp(.9rem, 1.5vw, 100rem);
+  width: clamp(20rem, 50%, 100rem);
+}
 
+/* --- Future section Contact --- */
+/* Grid Card Future section Contact */
+.future-section-contact{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding: 2% 5%;
+  gap: 2vw;
+}
 
+/* Single Card Future section Contact */
+.future-section-contact .future-card{
+  background: var(--backGroundColor2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: clamp(1.5rem, 2vw, 100rem);
+  border-radius: 7px;
+  border: 3px solid rgb(14, 71, 53);
+  transition: all 200ms;
+}
 
+.future-section-contact .future-card:hover{
+  transform: translateY(-5px);
+}
+.future-section-contact .future-card p {
+  font-size: clamp(1rem, 1.5vw, 100rem);
+}
 
+.future-section-contact .future-card h3{
+  font-size: clamp(1.5rem, 2vw, 100rem);
+  margin: 3% 0% 1% 0%;
+}
 
+.future-img-contact{
+  background-color: #05966875;
+  border-radius: 50%;
+  padding: clamp(.7rem, 1vw, 100rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.future-section-contact .future-card img{
+  height: clamp(1rem, 3vw, 100rem);
+}
 
+/* --- Future Form section --- */
+.form-section-contact{
+  padding: 2% 5%;
+}
 
+.form-section-contact .main-container{
+  background: var(--backGroundColor2);
+  padding: clamp(1rem, 2vw, 100rem);
+  border-radius: 7px;
+  border: 3px solid rgb(14, 71, 53);
+  gap: clamp(1rem, 1vw, 100rem);
+  display: flex;
+  flex-direction: column;
+}
 
+.form-section-contact form{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
 
+.form-section-contact form > input{
+  width: 100%;
+  height: 100%;
+  margin-top: clamp(.3rem, .7vw, 100rem);
+  border-radius: 7px;
+  border: 2px solid #10b98189;
+  padding: clamp(.7rem, 1vw, 100rem);
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  font-size: clamp(.7rem, 1vw, 100rem);
+}
 
+.form-section-contact form > input:focus{
+  border: 2px solid #10b98189;
+  outline: none;
+}
 
+.contact-container{
+  width: 100%;
+}
 
+.split-contact-container{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: clamp(.7rem, 1vw, 100rem);
+}
+/*  */
+.contact-container-select{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  gap: clamp(.3rem, .7vw, 100rem);
+}
 
+.contact-container-select label{
+  position: absolute;
+  color: #757575;
+  margin-left: clamp(.5rem, 1vw, 100rem);
+  pointer-events: none;
+}
 
+.selection{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  outline: none;
+  color: #ffffff;
+  font-weight: 500;
+  background: transparent;
+  border: 2px solid #10b98189;
+  font-size: clamp(.7rem, 1vw, 100rem);
+  border-radius: 7px;
+}
 
+.selection:open{
+  background-color: #0f3d2e;
+  color: white;
+}
 
+/*  */
+.checkbox-form{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin-top: clamp(.3rem, .7vw, 100rem);
+}
 
+input[type="submit"]{
+  width: fit-content;
+  margin-left: auto;
+  padding: clamp(.5rem, 1vw, 100rem) clamp(2rem, 3vw, 100rem);
+  border-radius: 7px;
+  border: 1px solid #059669;
+  background-color: #116147;
+  color: #fff;
+  font-weight: 500;
+  font-size: clamp(.85rem, 1.1vw, 100rem);
+  transition: all 170ms;
+}
 
+input[type="submit"]:hover{
+  transform: translateY(-5px);
+}
 
+input[type="submit"]:active{
+  transform: scale(101%);
+}
+
+.checkbox-form label{
+  display: flex;
+  align-items: center;
+  gap: clamp(3px, .5vw, 100rem);
+}
 
 @media only screen and (min-width: 0px) and (max-width: 1000px) {
   .nav-main-menu{
@@ -1616,4 +1786,12 @@ filter: brightness(0) saturate(100%) invert(49%) sepia(92%) saturate(905%) hue-r
     text-align: center;
     margin: 1% 0%;
   }
+  .checkbox-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .split-contact-container{
+  display: flex;
+  flex-direction: column;
+}
 }
