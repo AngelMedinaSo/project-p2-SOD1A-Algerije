@@ -59,6 +59,39 @@ ul {
   --schoolsysteemRegularClamp: clamp(1rem, 1vw, 2rem);
 }
 
+body.light-mode{
+  --backGroundColor: radial-gradient(circle,#ffffff 0%, #dfeee8 100%);
+  --backGroundColor1: linear-gradient(180deg,#ffffff 35%, #d4efe4 100%);
+  --backGroundColor2: linear-gradient(45deg,#ffffff 35%, #cde8dd 100%);
+  --backGroundColor3: radial-gradient(circle,#ffffff 0%, #cfe8df 80%);
+  --gradientTextColor: linear-gradient(212deg,#2c5c4a 0%, #0d3320 58%);
+  --gradientTextColorHover: linear-gradient(212deg,#2c5c4a 0%, #0d3320 65%);
+  --primaryTextColor: #111;
+  --SecondaryTextColor: #555;
+  --schoolsysteemContainerBGC: #ffffff;
+}
+
+body{
+  background: var(--backGroundColor);
+  color: var(--primaryTextColor);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle{
+  background: none;
+  border: 2px solid var(--primaryTextColor);
+  color: var(--primaryTextColor);
+  padding: 0.5rem 0.8rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.theme-toggle:hover{
+  transform: scale(1.1);
+}
+
 /* === Nav Bar === */
 /*
 nav {
