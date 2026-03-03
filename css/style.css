@@ -1564,6 +1564,18 @@ filter: brightness(0) saturate(100%) invert(49%) sepia(92%) saturate(905%) hue-r
   padding: 2% 5%;
 }
 
+.form-section-contact .title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#SCaanmeld_text{
+  color: #07a674;
+  font-weight: 500;
+}
+
 .form-section-contact .main-container{
   background: var(--backGroundColor2);
   padding: clamp(1rem, 2vw, 100rem);
